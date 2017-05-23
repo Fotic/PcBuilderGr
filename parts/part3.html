@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html lang="el">
+<link rel="stylesheet" type="text/css" href="../Style.css" media="screen" />
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="../images/icon.png" />
+	<title>PC Builder - GR</title>
+	<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+} 
+
+function showFunction() {
+    var x = document.getElementById('show');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+	</script> 
+</head>
+<body>
+<table>
+	<!-- Header Menu -->
+	<tr>
+		<td><p><a href="../index.html">Αρχικη Σελίδα</a> | <a href="../parts.html">Εξαρτήματα</a> | <a href="../about.html">Σχετικά...</a></p></td>
+	</tr>
+	<!-- Header -->
+	<tr>
+		<td id="title"><a href="../index.html"><center><img src="../images/title.png"></center></a></td>
+	</tr>
+</table>
+<table>
+	<!-- Zone -->
+	<tr>
+		<!-- Content -->
+		<td>
+		<button onclick="showFunction()" id="myHide" title="Show/Hide"><img src="../images/on-off.png" width=40px height=40px /></button>
+		
+		<pre id="show">
+<a href="#1">1 Τι σημασία έχει η αγορά μητρικής</a>
+
+<a href="#2">2 Τα απαραίτητα κριτήρια για την αγορά μητρικής</a>
+    <a href="#3">2.1 Socket και chipset</a>
+        <a href="#4">2.1.1 Επιλογή socket</a>
+            <a href="#5">2.1.1.1 Ποιο socket να επιλέξω για Intel</a>
+               <a href="#6"> 2.1.1.1.1 LGA 1151</a>
+                <a href="#7">2.1.1.1.2 LGA 2011-3</a>
+                <a href="#8">2.1.1.1.3 Παλαιότερα socket</a>
+            <a href="#9">2.1.1.2 Ποιο socket να επιλέξω για AMD</a>
+                <a href="#10">2.1.1.2.1 Socket FM2+</a>
+                <a href="#11">2.1.1.2.2 Socket AM4</a>
+                <a href="#12">2.1.1.2.3 Παλαιότερα socket<a>
+        <a href="#13">2.1.2 Επιλογή chipset</a>
+            <a href="#14">2.1.2.1 Ποιο chipset να επιλέξω για Intel</a>
+            <a href="#15">2.1.2.2 Ποιο chipset να επιλέξω για AMD</a>
+    <a href="#16">2.2 Συμβατότητα με μνήμη RAM</a>
+        <a href="#2">2.2.1 Γιατί να αποφύγουμε μητρικές με μόνο δύο θύρες RAM</a>
+		
+<a href="#17">3 Τα προαιρετικά κριτήρια για την αγορά μητρικής</a>
+    <a href="#18">3.1 Συμβατότητα με κάρτες γραφικών</a>
+        <a href="#19">3.1.1 Υποστήριξη SLI ή Crossfire</a>
+            <a href="#20">3.1.1.1 Μητρικές Intel με SLI/Crossfire</a>
+            <a href="#21">3.1.1.2 Μητρικές AMD με SLI/Crossfire</a>
+    <a href="#22">3.2 Υποστήριξη M.2 / NVMe M.2 SSD</a>
+    <a href="#23">3.3 Μέγεθος μητρικής</a>
+	
+<a href="#24">4 Θα έχω καλύτερες επιδόσεις στα παιχνίδια με μια ακριβότερη μητρική?</a>
+    <a href="#25">4.1 Συγκρίνοντας μητρικές με 45% διαφορά στην τιμή</a>
+    <a href="#26">4.2 Πώς γίνεται αυτό?<a>
+    <a href="#27">4.3 Παίζει ρόλο η τιμή για την ποιότητα κατασκευής?</a></pre>
+			
+			<p class="pp">			
+			<b id="1">Τι σημασία έχει η αγορά μητρικής</b><br><br>
+Η μητρική είναι η βάση του υπολογιστή. Είναι η κεντρική πλακέτα τυπωμένου κυκλώματος (Printed Cirquit Board, PCB). Πάνω της εγκαθίστανται όλα τα υπόλοιπα υποσυστήματα: επεξεργαστής, μνήμη, RAM, και κάρτες επέκτασης.<br><br>
+Επιπλέον, η μητρική κάρτα ενσωματώνει μια σειρά από συσκευές. Αυτές περιλαμβάνουν την κάρτα ήχου, κάρτα δικτύου, ελεγκτές SATA για τη σύνδεση των δίσκων, ελεγκτές USB για περιφερειακές συσκευές, κ.α.<br><br>
+Σκοπός της μητρικής είναι να τροφοδοτεί ηλεκτρικά όλα τα υποσυστήματα, καθώς επίσης και να αναλάβει την απρόσκοπτη επικοινωνία μεταξύ τους.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-01.png"><br><br>
+
+			<b id="2">Η μητρική επίσης υπαγορεύει:</b><br><br>
+Ποια μοντέλα επεξεργαστών μπορούμε να βάλουμε<br>
+Τι είδους RAM<br>
+Μέχρι πόση συνολική μνήμη<br>
+Σε τι συχνότητα μπορεί να τρέξει<br><br>
+
+Τέλος, η μητρική είναι που καθορίζει το αν μπορούμε να κάνουμε overclock τον επεξεργαστή και τις μνήμες μας.<br><br>
+Κατά συνέπεια, η αγορά μητρικής κάρτας είναι μια από τις σημαντικότερες αποφάσεις στην αγορά υπολογιστή.<br><br>
+Στην ενότητα που ακολουθεί θα δούμε τα κριτήρια που είναι ζωτικής σημασίας όσον αφορά τη λειτουργία του υπολογιστή.
+Αν κατά την αγορά μητρικής κάνουμε λάθος επιλογή σε αυτά τα κριτήρια, θα έχουμε σοβαρό πρόβλημα. Sε βαθμό που μπορεί να μην ανοίγει καν ο υπολογιστής.<br><br>
+
+			<b id="3">Socket και chipset</b><br><br>
+Το Socket και το chipset καθορίζουν ποιους ακριβώς επεξεργαστές μπορούμε να εγκαταστήσουμε στη μητρική.<br><br>
+Αν επιλέξουμε το λάθος socket ή chipset, ο υπολογιστής δεν πρόκειται να ξεκινήσει καν. Θα πρέπει είτε να αντικαταστήσουμε τη μητρική ή τον επεξεργαστή με ένα συμβατό μοντέλο.<br><br>
+
+			<b id="4">Επιλογή socket</b><br><br>
+
+To Socket της μητρικής είναι η "θήκη" πάνω στην οποία εγκαθίσταται ο επεξεργαστής. Κάθε σύγχρονος επεξεργαστής είναι συμβατός με ένα και μόνο ένα είδος socket.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-02.png"><br><br>
+
+Δεν υπάρχει καμία απολύτως συμβατότητα ανάμεσα σε διαφορετικά socket. Είναι αδύνατον ένας επεξεργαστής της Intel για Socket LGA 1151 να μπει σε μια μητρική με socket LGA 1155, ή το αντίστροφο.<br><br>
+Ο βασικός λόγος είναι πως τα διαφορετικά socket έχουν διαφορετικό αριθμό από pins για τη σύνδεση με τον επεξεργαστή. Για την ακρίβεια, το LGA 1155 έχει 1.155 pins, το LGA 1151 έχει 1.151pins κ.ο.κ.<br><br>	
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-03.png"><br><br>
+
+Στο μακρινό παρελθόν, στις εποχές των Pentium II, III, και 4, υπήρχαν αντάπτορες για διαφορετικά socket. Για παράδειγμα, ανάμεσα στο Socket 370 και το Slot 1.	<br><br>
+			
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-03a.png"><br><br>			
+			
+Αυτή η τακτική, όμως, έχει εγκαταλειφθεί πλήρως, εδώ και πάνω από δέκα χρόνια.<br><br>
+Η πιο πρόσφατη περίπτωση συνδυασμού διαφορετικών Socket ήταν το 2004. O Intel Xeon για Socket LGA 771, ένας επεξεργαστής ειδικός για server, μπορούσε να εγκατασταθεί σε desktop μητρική με socket LGA 775.<br><br>
+Όμως, για να γίνει αυτό έπρεπε να κόψουμε κάποια πλαστικά μέρη της μητρικής και να καλύψουμε με ταινία ένα μέρος του επεξεργαστή.	<br><br>		
+			
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-04.png"><br><br>			
+			
+Ήταν δηλαδή μια πατέντα. Λειτουργούσε μόνο επειδή οι μητρικές και οι επεξεργαστές και με τα δύο socket χρησιμοποιούσαν το ίδιο chipset. Και πάλι, όμως, χρειαζόταν ειδική επέμβαση στο BIOS για να αξιοποιηθεί πλήρως ο Xeon.<br><br>
+Πλέον και στο μέλλον, δεν πρόκειται η Intel ή η AMD να κυκλοφορήσουν κάποιον αντάπτορα για διαφορετικά socket.<br><br>
+Εξυπακούεται φυσικά πως καμία μητρική για Intel δεν μπορεί να δεχτεί επεξεργαστές AMD ή τούμπαλιν, ασχέτως αν αυτό επίσης γινόταν στο μακρινό παρελθόν.<br><br>
+
+			<b id="5">Ποιο socket να επιλέξω για Intel</b><br><br>
+Τη στιγμή που γράφονται αυτές οι γραμμές, τα νεότερα socket της Intel είναι τα LGA1151 και LGA 2011-3.<br><br>
+
+			<b id="6">LGA 1151</b><br><br>
+To LGA 1151 δέχεται όλους τους επεξεργαστές 6ης και 7ης γενιάς, Skylake και Kaby Lake της Intel, από τον Celeron G3900 μέχρι και τον Core i7 7700K.	<br><br>		
+		
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-05.png" 	width=300px height=350px><br><br>
+
+Για επεξεργαστές 7ης γενιάς θα πρέπει υποχρεωτικά να επιλέξουμε chipset B250, H270, ή Z270, που είναι συμβατό και με την 6η γενιά.<br><br>
+Αν είχαμε ήδη μητρική με chipset LGA 1151 και chipset B150, H170, Z170, είναι πιθανό να έχει κυκλοφορήσει ο κατασκευαστής αναβάθμιση BIOS για να μπορούμε να βάλουμε επεξεργαστή 7ης γενιάς.<br><br>
+Πάντως, δεν έχουμε κανένα απολύτως όφελος στο να αγοράσουμε νέα μητρική με τα παλαιότερα chipset B150, H170, ή Z170, ή να βάλουμε 6ης γενιάς επεξεργαστή.	<br><br>
+
+			<b id="7">LGA 2011-3</b><br><br>
+
+Το LGA 2011-3 είναι για τους υψηλότερων επιδόσεων επεξεργαστές i7 της εταιρείας, από τον εξαπύρηνο i7 5820K μέχρι και τον δεκαπύρηνο i7-6950X.<br><br>
+			
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-06.png" width=300px height=350px><br><br>			
+			
+Στην περίπτωση του 2011-3 δεν μας απασχολεί το chipset, καθώς το μοναδικό για τους i7 είναι το X99.<br><br>
+Υπάρχει και το chipset C612 που χρησιμοποιείται μόνο σε μητρικές για server/workstation με επεξεργαστές Xeon.<br><br>
+
+			<b id="8">Παλαιότερα socket</b><br><br>			
+Ο μόνος λόγος να αγοράσουμε μητρική με παλαιότερο socket είναι αν κάηκε η παλαιότερη μητρική που είχαμε και δεν θέλουμε να αλλάξουμε και επεξεργαστή. Όπως  με Socket 478, Socket 775, Socket 1155.<br><br>	
+Εντύπωση μας κάνει πως δεν υπάρχει καμία μητρική με Socket 1156 για την 1η γενιά Core i3, i5, i7.<br><br>
+
+Αν έχουμε επεξεργαστή 4ης γενιάς, θα βρούμε ακόμα αρκετές μητρικές με Socket 1150.<br><br>
+		
+			<b id="9">Ποιο socket να επιλέξω για AMD</b><br><br>	
+
+Οι επεξεργαστές της AMD ανήκουν σε δύο κατηγορίες: Στους οικονομικούς A6/A8/A10 και στους υψηλών επιδόσεων Ryzen. Κάθε κατηγορία επεξεργαστών έχει το δικό της socket.<br><br>	
+			<b id="10">Socket FM2+</b><br><br>	
+
+To Socket FM2+ δέχεται τους περισσότερους επεξεργαστές A6/A8/A10 και Athlon. Η εταιρεία σκοπεύει να κυκλοφορήσει νέους A10 και Athlon 7ης γενιάς που θα είναι συμβατοί με το Socket AM4, αλλά προς το παρόν δεν έχουν έρθει στην Ελλάδα.	<br><br>			
+			
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-08.png" width=350px height=300px><br><br>			
+			
+			<b id="11">Socket AM4</b><br><br>	
+
+Το AM4 είναι το νεότερο Socket της AMD, και δέχεται όλους τους Ryzen που κυκλοφορούν αυτή τη στιγμή, από τις σειρές Ryzen 5 και Ryzen 7. Κατά πάσα πιθανότητα θα είναι συμβατό και με την επερχόμενη σειρά Ryzen 3.		<br><br>	
+			
+<img border="0" alt="PC Build Img" src="https://gzhls.at/p/4879/1604879/1604879-1.jpg" width=350px height=300px><br><br>			
+			
+			<b id="12">Παλαιότερα socket</b><br><br>
+
+Αν έχουμε παλαιό επεξεργαστή AMD, θα βρούμε ελάχιστες μητρικές με Socket AM1 και αρκετές με Socket AM3+, που είναι το socket των AMD FX.<br><br>
+
+Αν έχουμε επεξεργαστή για FM2 ή AM3, οι εκδόσεις FM2+ και AM3+ διατηρούν προς τα πίσω συμβατότητα, καθώς δεν είναι διαφορετικά socket, αλλά επεκτάσεις των προηγούμενων.<br><br>			
+			
+			<b id="13">Επιλογή chipset</b><br><br>
+
+To chipset της μητρικής είναι αυτό που καθορίζει πως ο επεξεργαστής, η RAM, η κάρτα γραφικών και όλα τα περιφερειακά θα επικοινωνούν.<br><br>
+
+Επιπλέον, τo chipset διαχειρίζεται και ορισμένες δυνατότητες της μητρικής, όσον αφορά τον αριθμό των USB, τον αριθμό των θυρών SATA, τη δυνατότητα overclock, τη δυνατότητα SLI, καθώς και το dual ή quad channel DDR στις μνήμες.<br><br>
+
+Τέλος, συγκεκριμένες γενιές επεξεργαστών μπορεί να χρειάζονται συγκεκριμένο chipset. Αν και όταν το socket παραμένει το ίδιο, συνήθως οι κατασκευαστές βγάζουν BIOS update ώστε ένα παλιό chipset να υποστηρίζει νεότερους επεξεργαστές.<br><br>
+Ποιο chipset να επιλέξω για Intel
+
+Στην αγορά νέας μητρικής, τα μόνα chipset που αξίζει να επιλέξουμε για Socket 1151 είναι τα B250, H270 ή Z270, που υποστηρίζουν επεξεργαστές 6ης και 7ης γενιάς. Στην πραγματικότητα, όμως, το H270 δεν είναι ιδιαίτερα καλή επιλογή.<br><br>
+
+Για να δούμε τις διαφορές των chipset μεταξύ τους, αρκεί να συμβουλευτούμε τον πίνακα της Wikipedia.<br><br>			
+			
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-10.png"><br><br>			
+
+Βλέπουμε λοιπόν πως το B250 και δεν υποστηρίζει overclock, διαθέτει έξι θύρες USB 2.0 και 6 USB 3.0, μία θύρα PCI Express x16 για επικοινωνία της κάρτας γραφικών με τον επεξεργαστή.<br><br>
+
+Αυτό πρακτικά σημαίνει πως με μια μητρική B250 θα μπορέσουμε να τρέξουμε RAM DDR4 μόνο μέχρι 2133MHz με επεξεργαστές 6ης γενιάς ή 2400MHz με επεξεργαστές 7ης γενιάς. Οποιαδήποτε μεγαλύτερη συχνότητα, θέλει overclock μέσω XMP profile.<br><br>
+
+Το "μεγάλο" chipset Z270 επιτρέπει overclock σε επεξεργαστή, κάρτα γραφικών, και μνήμες, υποστηρίζει πολλαπλές κάρτες γραφικών σε SLI ή Crossfire - σε όσες μητρικές έχουν σχεδιαστεί για αυτό - ενώ δίνει και περισσότερες θύρες USB 3.0.	<br><br>		
+			
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-11.png"><br><br>			
+Ο λόγος που αναφέρουμε πως το H270 δεν είναι ιδιαίτερα καλή επιλογή είναι επειδή η μόνη πραγματική διαφορά του με το B250 είναι πως υποστηρίζει SATA RAID.<br><br>
+
+Με δεδομένο πως το RAID της μητρικής είναι μακράν η χειρότερη μορφή RAID, δεν έχουμε κανένα απολύτως κέρδος επιλέγοντας το H270 έναντι του B250.<br><br>			
+			
+Για το socket 2011-3 το chipset X99 είναι η μοναδική επιλογή. Είναι επίσης το μοναδικό chipset στην αγορά που υποστηρίζει Quad Channel DDR για τις μνήμες.<br><br>
+			<b id="14">Ποιο chipset να επιλέξω για AMD</b><br><br>
+
+Στην AMD τα πράγματα είναι πιο απλά. Για το FM2+ η μόνη επιλογή που αξίζει είναι το chipset A88, που θα το βρούμε ήδη από τα φθηνότερα μοντέλα.<br><br>
+
+Στο AM4, το chipset B350 είναι για τους απλούς χρήστες και τις πιο οικονομικές μητρικές, ενώ το chipset X370 είναι η enthusiast σειρά.	<br><br>		
+			
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-12.png"><br><br>			
+
+Η μόνη πραγματική τους διαφορά είναι πως το X370 υποστηρίζει SLI και Crossfire, ενώ το B350 μόνο crossfire. Και τα δύο υποστηρίζουν overclock.<br><br>
+			<b id="15">Συμβατότητα με μνήμη RAM</b><br><br>
+
+Στην αγορά μητρικής αυτή τη στιγμή, τουλάχιστον για τα Socket 1151, 2011-3, ή AM4, οι μνήμες DDR4 είναι μονόδρομος.<br><br>
+
+Υπάρχουν κάποιες λίγες μητρικές με Socket 1151 που υποστηρίζουν DDR3, αλλά δεν αξίζει να περιοριστούμε σε παλιά τεχνολογία μνήμης για όλη τη διάρκεια ζωής της μητρικής.<br><br>
+
+Να σημειωθεί πως δεν υπάρχει κανένας τρόπος η μνήμη DDR3 να μπει σε θύρα για DDR4 και αντιστρόφως. Οι μνήμες έχουν τις εγκοπές σε διαφορετικό σημείο.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-12a.png"><br><br>
+
+Από εκεί και πέρα, όπως αναφέραμε και παραπάνω στα chipsets, αν θέλουμε να τρέξουμε μνήμες υψηλής συχνότητας, άνω των 2400MHz, χρειαζόμαστε υποχρεωτικά chipset Z250 για Intel.<br><br>
+
+Στην AMD, όλα τα chipset υποστηρίζουν υψηλές συχνότητες μνήμης.<br><br>
+
+Καλό είναι πάντως να γνωρίζουμε πως η συχνότητα της RAM δεν είναι ο μοναδικός παράγοντας που επηρεάζει την ταχύτητα της RAM.<br><br>
+
+			<b id="16">Γιατί να αποφύγουμε μητρικές με μόνο δύο θύρες RAM</b><br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-12b.png"><br><br>
+
+Ο λόγος είναι πως τα μοντέλα αυτά είναι τα απολύτως πιο φτηνιάρικα. Ο κατασκευαστής δεν είχε να κόψει από αλλού, και έκοψε δύο θύρες RAM.<br><br>
+Για να εξοικονομήσουμε λιγότερα από 10 ευρώ, θα καταλήξουμε με μια μητρική που θα μας περιορίσει σημαντικά σε μελλοντική επέκταση της μνήμης.<br><br>
+Θα πρέπει να βάλουμε πχ 1x8GB και να χάσουμε το Dual Channel DDR, για να προσθέσουμε άλλο 1x8GB αν χρειαστεί αργότερα. Ή, εναλλακτικά, να βάλουμε 2x4GB, και αν χρειαστούμε παραπάνω μνήμη, να την πουλήσουμε/χαρίσουμε/πετάξουμε για να βάλουμε 2x8GB.<br><br>
+Και τα δύο σενάρια είναι ειλικρινά ανόητα, όταν μπορούμε να πάρουμε εξ' αρχής μια μητρική με 4 θύρες RAM και να ξεμπερδεύουμε.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-12c.png"><br><br>
+
+			<b id="17">Τα προαιρετικά κριτήρια για την αγορά μητρικής</b><br><br>
+
+Τα παρακάτω κριτήρια αφορούν περισσότερο το τι δυνατότητες θέλουμε από τη μητρική. Εφόσον έχουμε επιλέξει σωστό socket, chipset, και τύπο μνήμης, δεν υπάρχει περίπτωση να μην λειτουργήσει ο υπολογιστής.<br><br>
+
+Όμως η αγορά μητρικής μπορεί να μας προσφέρει και επιπλέον δυνατότητες, που ενδεχομένως να μας ενδιαφέρουν.<br><br>
+
+			<b id="18">Συμβατότητα με κάρτες γραφικών</b><br><br>
+Αρκετοί χρήστες έχουν την εντύπωση πως πρέπει η κάρτα γραφικών να είναι συμβατή με τη μητρική τους.<br><br>
+Στην πραγματικότητα, η σύνδεση PCI Express έχει πλήρη συμβατότητα με όλες τις παλαιότερες εκδόσεις, τόσο όσον αφορά τη θύρα της μητρικής όσο και την κάρτα γραφικών.<br><br>
+Αυτό σημαίνει πως όλες οι μητρικές της τελευταίας δεκαετίας μπορούν να δεχτούν οποιαδήποτε κάρτα γραφικών, από τη μικρότερη Geforce 210 μέχρι την κορυφαία Geforce GTX 1080 Ti.<br><br>
+<img border="0" alt="PC Build Img" src="http://techreport.com/r.x/2017_03_27_Gigabyte_shows_off_a_trio_of_GeForce_GTX_1080_Tis/xtreme11gfront.jpg	"><br><br>
+Βέβαια, για το θέμα της απόδοσης, θα πρέπει η κάρτα γραφικών να ταιριάζει με τον επεξεργαστή, όπως είδαμε στον οδηγό για την αναβάθμιση υπολογιστή.<br><br>
+Εν συντομία, αν βάλουμε πολύ μεγάλη κάρτα γραφικών με πολύ μικρό επεξεργαστή, θα έχουμε bottleneck. Δηλαδή ο επεξεργαστής θα "κρατάει πίσω" την κάρτα, και θα έχει χαμηλότερη απόδοση απ' ότι με ένα μεγαλύτερο επεξεργαστή.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-14.png"><br><br>
+Όμως αυτό είναι καθαρά θέμα της απόδοσης του επεξεργαστή, όχι περιορισμός της μητρικής. Αυτή τη στιγμή δεν υπάρχει καμία κάρτα γραφικών που θα έχει bottleneck ακόμα και στο PCI Express x8, αντί για το PCI Express x16.<br><br>
+Θα αναλύσουμε το θέμα του PCI Express σε επερχόμενο οδηγό αγοράς για κάρτες γραφικών.<br><br>
+
+			<b id="19">Υποστήριξη SLI ή Crossfire</b><br><br>
+<img border="0" alt="PC Build Img" src="http://i179.photobucket.com/albums/w306/Drakan290/slicrossfire/slibridges.jpg"><br><br>
+To SLI και το Crossfire είναι τα ονόματα που έχουν δώσει η Nvidia και η AMD αντίστοιχα στη μέθοδο του να έχουμε πολλαπλές κάρτες γραφικών στον υπολογιστή, και να λειτουργούν ταυτόχρονα για πολλαπλάσιες επιδόσεις.<br><br>
+Αυτές οι μέθοδοι αξίζει να εφαρμοστούν αποκλειστικά και μόνο από πολύ φανατικούς gamer. Ο χρήστης θα πρέπει να επωμιστεί το κόστος δύο καρτών γραφικών, καθώς την επιπλέον θερμότητα και το θόρυβο στον υπολογιστή, για να έχει καλύτερη απόδοση στα παιχνίδια.<br><br>
+Επίσης, σε καμία περίπτωση δεν αξίζει να κάνουμε SLI ή Crossfire με μέτριες κάρτες γραφικών, πχ να βάλουμε δύο RX 480. Μία κάρτα των 500ων ευρώ είναι πάντοτε καλύτερη επιλογή από δύο κάρτες των 250 ευρώ.	<br><br>		
+<img border="0" alt="PC Build Img" src="http://tecnouser.net/wp-content/uploads/2016/07/SLI-Crossfire-differenze.jpg"><br><br>
+
+			<b id="20">Μητρικές Intel με SLI/Crossfire</b>	<br><br>
+Για Socket 1151, η οικονομικότερη μητρική με υποστήριξη SLI ξεκινάει στα 150 ευρώ, ενώ θα βρούμε μοντέλα μόνο με crossfire από τα 78 ευρώ.	<br><br>
+Σε περίπτωση που θέλουμε να βάλουμε βαθιά το χέρι στην τσέπη, και να στήσουμε σύστημα με τέσσερις κάρτες γραφικών σε SLI, η μητρική θα μας κοστίσει minimum 400 ευρώ.	<br><br>
+Στις μητρικές με socket 2011-3, θα βρούμε σε όλα τα μοντέλα υποστήριξη SLI και Crossfire, με τουλάχιστον δύο κάρτες γραφικών.	<br><br>
+
+			<b id="21">Μητρικές AMD με SLI/Crossfire</b>	<br><br>
+Σε ορισμένες οικονομικές μητρικές της AMD είναι δυνατό ένα σύστημα που ονομάζεται Hybrid Crossfire. Σε κάποιες μητρικές θα το συναντήσουμε σαν AMD Dual Graphics. Απ' όσο γνωρίζουμε, πρόκειται για το ίδιο σύστημα.<br><br>
+Αυτό σημαίνει πως αν έχουμε έναν επεξεργαστή Α8 ή Α10 με ενσωματωμένα γραφικά Radeon R7, και βάλουμε επιπλέον μια κάρτα γραφικών R7 250, θα λειτουργήσει σαν ένα "crossfire του φτωχού".<br><br>
+Με δεδομένο πως οι μητρικές με FM2+ δεν είναι συστήματα που ενδείκνυνται για διπλές κάρτες γραφικών, αν θέλουμε SLI ή Crossfire καλύτερα να πάρουμε μία από τις μεγάλες μητρικές για Ryzen, που ξεκινούν από τα 200 ευρώ.<br><br>
+
+			<b id="22">Υποστήριξη M.2 / NVMe M.2 SSD</b><br><br>
+
+Οι SSD που συνδέονται μέσω της θύρας M.2 περιλαμβάνουν τα ταχύτερα μοντέλα αυτή τη στιγμή στην αγορά. Ειδικά οι δίσκοι με το πρωτόκολλο NVMe.<br><br>			
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-15.png"><br><br>
+			
+Ακόμα και αν δεν σκοπεύουμε άμεσα να πάρουμε ένα τέτοιο δίσκο, είναι προς όφελός μας να προβλέψουμε κατά την αγορά μητρικής να πάρουμε ένα μοντέλο με θύρα M.2.<br><br>
+
+Η αλήθεια είναι πάντως πως ακόμα στις πιο φθηνές μητρικές με Socket 1151 πλέον θα βρούμε θύρα M.2.<br><br>			
+			
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-16.png"><br><br>			
+			
+Για αγορά μητρικής AM4 θα βρούμε θύρα M.2 στα ελαφρώς ακριβότερα μοντέλα, από τα 120 ευρώ.<br><br>	
+
+			<b id="23">Μέγεθος μητρικής</b><br><br>	
+
+Οι περισσότερες μητρικές αυτή τη στιγμή στην αγορά ακολουθούν τις προδιαγραφές ATX (ή Standard ATX ή Full ATX), που σημαίνει πως έχουν μέγεθος ακριβώς 305 × 244 mm.<br><br>	
+
+Αντίστοιχα τα περισσότερα midi tower κουτιά μπορούν να δεχτούν μητρικές με προδιαγραφές ATX.<br><br>	
+
+Όμως, αν το κουτί που σκοπεύουμε να πάρουμε αναφέρει πως υποστηρίζει μόνο Micro ATX και Mini ITX μητρικές...	<br><br>	
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-17.png"><br><br>
+
+...τότε μια μητρική ATX / Full ATX δεν θα χωρέσει, και δεν θα μπορέσουμε να την εγκαταστήσουμε.<br><br>
+
+Ο τρόπος που οι Micro ATX και Mini ITX είναι μικρότερες είναι πως έχουν αφαιρέσει αρκετές από τις θύρες επέκτασης PCI Express.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-18.png"><br><br>
+			
+Αν δεν έχουμε κάρτες επέκτασης πέραν από την κάρτα γραφικών, πχ ξεχωριστή κάρτα ήχου, κάρτα δικτύου, κάρτα SATA κλπ, τότε οι Micro ATX και Mini ATX δεν έχουν καμία διαφορά με τις Full ATX.<br><br>
+
+Παίρνουν τους ίδιους επεξεργαστές και έχουν τις ίδιες δυνατότητες, μείον κάποιες θύρες USB λόγω έλλειψης χώρου.<br><br>
+
+Υπάρχουν βέβαια και μητρικές που είναι Extended ATX (E-ATX). Κανονικά οι προδιαγραφές E-ATX είναι 305x330, αλλά συχνά οι κατασκευαστές όποια μητρική είναι μεγαλύτερη από ATX, την αποκαλούν E-ATX, ακόμα και αν είναι 305 x 272 mm.<br><br>		
+			
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-19.png"><br><br>		
+Θα πρέπει λοιπόν να βεβαιωθούμε πως το κουτί μας θα μπορεί να δεχτεί μητρική E-ATX. Τα περισσότερα Full Tower κουτιά θα πάρουν άνετα τέτοιες μητρικές.<br><br>
+
+Στο κάτω-κάτω, οι E-ATX πρόκειται για αρκετά ακριβά μοντέλα, άνω των 300ων ευρώ.<br><br>
+
+Fun Fact: οι προδιαγραφές ATX, εκτός από το μέγεθος της μητρικής, υπαγορεύουν και τη γενικότερη τοποθέτηση των υποσυστημάτων, τη θέση του επεξεργαστή, της RAM, των θυρών επέκτασης κλπ.<br><br>			
+			
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-29.png"><br><br>			
+			
+Έτσι, ανεξάρτητα από τον κατασκευαστή, όλες οι συσκευές τοποθετούνται σε συγκεκριμένες θέσεις. Αν ο κατασκευαστής έκανε ό,τι ήθελε, χωρίς κάποιο πρότυπο, θα ήταν εξαιρετικά δύσκολη η αγορά μητρικής που να ταίριαζε στο σύστημά μας.<br><br>
+			
+			<b id="24">Θα έχω καλύτερες επιδόσεις στα παιχνίδια με μια ακριβότερη μητρική?</b>
+
+Μέχρι ένα σημείο, η τιμή στην αγορά μητρικής συνάδει με τα χαρακτηριστικά που προσφέρει.<br><br>
+
+Είναι λογικό μια μητρική με το chipset Z270, που υποστηρίζει overclock, να είναι ακριβότερη από μια με chipset B250. Είναι επίσης λογικό μια μητρική που υποστηρίζει 4xSLI να είναι ακριβότερη από μία χωρίς SLI ή με σκέτο 2xSLI.<br><br>
+
+Το ερώτημα όμως είναι, αν αγνοήσουμε όλα τα άλλα χαρακτηριστικά, θα έχουμε καλύτερες επιδόσεις με μια ακριβότερη μητρική? Ας δούμε τι λένε οι αριθμοί.<br><br>
+			<b id="25">Συγκρίνοντας μητρικές με 45% διαφορά στην τιμή</b><br><br>
+
+Η ιστοσελίδα <a href="http://www.legitreviews.com/" target="_blank">legitreviews.com</a> είναι μία από τις πλέον ιστορικές σελίδες όσον αφορά το computer hardware, καθώς λειτουργεί από το 2002. Πρακτικά, είναι περίπου 3 χρόνια μεγαλύτερη από το YouTube.<br><br>			
+			
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-22.png"><br><br>
+Ανάμεσα στις εκατοντάδες μητρικές που έχουν δοκιμάσει, αξίζει να συγκρίνουμε τα αποτελέσματα σε δύο μητρικές της ίδιας εταιρείας, με το ίδιο socket, και το ίδιο chipset.<br><br>	
+
+Η πρώτη είναι η ASUS Prime Z270-A.<br><br>	
+
+<img border="0" alt="PC Build Img" src="https://www.quietpc.com/images/products/asus-z270-a-angle-large.jpg" width=400px height=350px ><br><br>
+
+Η δεύτερη είναι η ASUS ROG STRIX Z270G.H διαφορα στην τιμή τους ειναι κοντά στο 45%.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://www.bhphotovideo.com/images/images2500x2500/asus_rog_strix_z270g_gaming_lga1151_ddr4_dp_hdmi_1304343.jpg" width=400px height=420px><br><br>
+
+Τι προκύπτει λοιπόν από τις μετρήσεις, ειδικά όσον αφορά το gaming? Στο GTA V, η Z270G έχει κατά μέσο όρο 0,44FPS λιγότερα από την φθηνότερη Z270-A, με την εργοστασιακή (stock) ταχύτητα του επεξεργαστή.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-25.png"><br><br>
+
+Ακόμα και με overclock στα 4,9GHz, τα FPS ανεβαίνουν μόνο μέχρι τα 127.68.<br><br>
+
+Αντίστοιχα είναι τα αποτελέσματα στο Witcher III, όπου η Z270G υπολείπεται κατά 0,38FPS. Μόνο με overclock είναι εμφανώς καλύτερη, όσο "εμφανή" μπορούν να είναι 3,77FPS.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-26.png"><br><br>
+
+Μέχρι και στα συνθετικά benchmark βλέπουμε παρόμοια αποτελέσματα.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-27.png"><br><br>	
+
+Ακόμα και σε μετρήσεις που βγαίνει λίγο μπροστά η Z270G, δεν δικαιολογούν με τίποτα τη διαφορά στην τιμή.<br><br>
+			<b id="26">Πώς γίνεται αυτό?</b><br><br>
+
+Η πραγματικότητα είναι πως στη μητρική πληρώνουμε κυρίως τα χαρακτηριστικά της, όχι επιπλέον επιδόσεις.<br><br>
+
+Η ASUS ROG STRIX Z270G είναι Micro ATX. Θα χωρέσει σε μικρότερο κουτί για κάποιον που θέλει ένα gaming υπολογιστή που να μεταφέρεται εύκολα.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/05/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%9C%CE%B7%CF%84%CF%81%CE%B9%CE%BA%CE%AE%CF%82-%CE%A0%CF%8E%CF%82-%CE%BD%CE%B1-%CE%91%CE%B3%CE%BF%CF%81%CE%AC%CF%83%CF%89-%CF%84%CE%B7%CE%BD-%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BB%CE%B7%CE%BB%CE%B7-Motherboard-28.png"><br><br>	
+
+Επίσης, η Z270G υποστηρίζει RAM μέχρι 4000MHz, ενώ η Z270-A σταματάει στα 3866MHz. Η Z270G έχει ενσωματωμένο WiFi 802.11 a/b/g/n/ac και Bluetooth v4.1, και καλύτερη κάρτα ήχου ROG SupremeFX, αντί για την απλή Realtek® ALC S1220A.<br><br>
+
+Είναι αυτές οι διαφορές αρκετά σημαντικές για να δικαιολογήσουν το 45% της υψηλότερης τιμής? Για εμάς και για εσάς ίσως όχι. Αλλά για κάποιον που τον ενδιαφέρουν αυτά τα χαρακτηριστικά, μπορεί κάλλιστα να επιλέξει την Z270G.<br><br>
+
+Αυτό είναι τελικά και το πιο χρήσιμο συμπέρασμα όσον αφορά την αγορά μητρικής. Αφού έχουμε καλύψει τα βασικά, όπως το socket και τις RAM, στη συνέχεια κοιτάζουμε τι χαρακτηριστικά μας ενδιαφέρουν.<br><br>
+
+Αν δεν μας αφορά το overclock ή το SLI, δεν υπάρχει λόγος να δώσουμε 200 ευρώ για μητρική. Αν σκεφτόμαστε να δώσουμε 200 ευρώ για επεξεργαστή και 200 για μητρική, ένας επεξεργαστής των 250 με μια μητρική των 150 ευρώ θα είναι πάντοτε καλύτερη επιλογή.<br><br>
+			<b id="27">Παίζει ρόλο η τιμή για την ποιότητα κατασκευής?</b><br><br>
+
+Το θέμα όμως είναι πως στην αγορά μητρικής για σταθερό υπολογιστή, ακόμα και τα σχετικά οικονομικά μοντέλα έχουν αρκετά καλά χαρακτηριστικά. Για παράδειγμα, δεν θα βρούμε μητρικές πράσινου ή μπλε χρώματος σε σταθερό υπολογιστή, ούτε στα 60 ευρώ.<br><br>
+
+Σε πολύ ακριβές μητρικές θα συναντήσουμε επιπλέον εξωτικά συστήματα ψύξης, και πιθανώς ανώτερη ποιότητα πυκνωτών. Μέχρι και ενσωματωμένο block για υδρόψυξη  θα βρούμε στην ακριβότερη μητρική αυτή τη στιγμή στην αγορά.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://www.asus.com/media/global/products/YjgebKNW4n82WSXm/P_setting_000_1_90_end_500.png"><br><br>	
+Πάντως, αν αποφύγουμε τις απολύτως πιο φθηνές μητρικές των 60 ευρώ, και ένα μοντέλο των 85-90 ευρώ θα μας καλύψει όσον αφορά την αξιοπιστία. Ειδικά από τη στιγμή που δεν μας ενδιαφέρει το overclock σε αυτή την κατηγορία τιμής.<br><br>
+			
+			</p>
+		</td>
+		<td> <button onclick="topFunction()" id="myBtn" title="Go to top" ><img src="../images/arrow.png" width=50px height=50px /></button> </td>
+	</tr>
+</table>
+</body>
+</html>

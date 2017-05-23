@@ -1,0 +1,173 @@
+#title {
+	border:5px solid black;
+		border-radius:100px;
+	padding:10px;				/*generate space around content*/
+	background-image:url('images/3.jpg');
+	height:180px;
+}
+
+.Main{
+	position:relative;
+    animation-name: anim1;
+    animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+
+#Stitle{
+	position:relative;
+    animation-name: anim2;
+    animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes anim1 {
+    0%  {left:0px; top:0px;}
+    25%  {left:0px; top:50px;}
+	50%  {left:0px; top:100px;}
+    75%  {left:0px; top:150px;}
+    100% {left:0px; top:200px;}
+}
+
+@keyframes anim2 {
+    0%  {left:0px; top:450px;}
+    25%  {left:0px; top:400px;}
+	50%  {left:0px; top:300px;}
+    75%  {left:0px; top:250px;}
+    100% {left:0px; top:210px;}
+}
+
+body {
+	background-image: url('images/2.jpg');
+	background-color: #353f51;
+}
+
+table {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+#Mp {
+	font-size:25px;
+	text-align:center;
+}
+
+p ,pre	{
+	border:5px solid black;
+		border-radius:50px;
+	font-size:18px;
+	background-image:url('images/3.jpg');
+	margin-top:10px;	/*generate space around elements*/
+	margin-bottom:10px;
+	margin-left:80px;
+	margin-right:80px;
+		padding:25px;
+	color:white;
+	text-align:left;
+	text-shadow: 1px 1px 5px black;
+}
+
+h2	{
+	color:red;
+	text-shadow: 1px 1px 5px black;
+	font-size:25px;
+	text-align:center;
+}
+
+b {
+	color:white;
+	font-size:25px;
+	text-shadow: 1px 1px 5px black;
+}
+#parxikis img {
+	width:210px;
+	height:300px;
+
+}
+#parxikis p {
+	width:210px;
+	height:300px;
+
+}
+#parxikis a {
+	color:white;
+	text-decoration:none;
+	text-shadow: 1px 1px 5px black;
+}
+
+#parxikis a:hover {
+	color:red;
+	text-decoration:none;
+	text-shadow: 1px 1px 5px black;
+}
+
+p a  {
+	color: white;
+	text-decoration:none;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px black;
+}
+
+p a:hover  {
+	color:red;
+	text-decoration:none;
+	text-shadow: 1px 1px 5px black;
+}
+pre a  {
+	color: white;
+	text-decoration:none;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px black;
+	font-family: times;
+}
+
+pre a:hover  {
+	color:red;
+	text-decoration:none;
+	text-shadow: 1px 1px 5px black;
+}
+.pp img{
+	border:1px solid black;
+		border-radius:50px;
+}
+
+.pp b {
+	color:red;
+	font-size:25px;
+	text-shadow: 1px 1px 5px black;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+#myHide {
+    position: fixed; /* Fixed/sticky position */
+    top: 20px; /* Place the button at the bottom of the page */
+    left: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myHide:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}

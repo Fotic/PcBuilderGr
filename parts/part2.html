@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html lang="el">
+<link rel="stylesheet" type="text/css" href="../Style.css" media="screen" />
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="../images/icon.png" />
+	<title>PC Builder - GR</title>
+	<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+} 
+
+function showFunction() {
+    var x = document.getElementById('show');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+	</script> 
+</head>
+<body>
+<table>
+	<!-- Header Menu -->
+	<tr>
+		<td><p><a href="../index.html">Αρχικη Σελίδα</a> | <a href="../parts.html">Εξαρτήματα</a> | <a href="../about.html">Σχετικά...</a></p></td>
+	</tr>
+	<!-- Header -->
+	<tr>
+		<td id="title"><a href="../index.html"><center><img src="../images/title.png"></center></a></td>
+	</tr>
+</table>
+<table>
+	<!-- Zone -->
+	<tr>
+		<!-- Content -->
+		<td>
+		<button onclick="showFunction()" id="myHide" title="Show/Hide"><img src="../images/on-off.png" width=40px height=40px /></button>
+		
+		<pre id="show">
+    <a href="#1">1 Η δυσκολία στην αγορά τροφοδοτικού</a>
+		<a href="#2">1.1 Τι είναι το "συνιστώμενο τροφοδοτικό"</a>
+    <a href="#3">2 Πώς να αγοράσω τροφοδοτικό με το καλύτερο PSU Calculator</a>
+        <a href="#4">2.1 OuterVision Power Supply Calculator</a>
+            <a href="#5">2.1.1 Πώς χρησιμοποιώ το PSU Calculator</a>
+               <a href="#6">2.1.1.1 PSU Calculator Basic</a>
+               <a href="#7">2.1.1.2 PSU Calculator Expert</a>
+    <a href="#8">3 Τι να προσέξω στην αγορά τροφοδοτικού</a>
+        <a href="#9">3.1 Μπορεί ένα τροφοδοτικό με πολλά watt να κάψει τον υπολογιστή?</a>
+        <a href="#10">3.2 Είναι όλα τα τροφοδοτικά των ίδιων watt ίδια?</a>
+                <a href="#11">3.2.1 Ποιους κατασκευαστές να αποφεύγουμε</a>
+                <a href="#12">3.2.2 Ποιους κατασκευαστές να προτιμήσουμε<a>
+			<a href="#13">3.3 Ένα τροφοδοτικό με περισσότερα watt έχει μεγαλύτερη κατανάλωση?</a>
+            <a href="#14">3.4 Τι είναι το 80 plus τροφοδοτικό</a>
+            <a href="#15">3.4.1 Τι διαφορά έχει το 80 plus Bronze με το 80 plus Gold και τα άλλα επίπεδα?</a>
+		<a href="#16">3.5 Αξίζει να πάρω μεγαλύτερο τροφοδοτικό απ' όσο χρειάζομαι?</a>
+        <a href="#17">3.6 Τι είναι το modular τροφοδοτικό?</a>
+    <a href="#17">4 Χρειάζεστε βοήθεια με την αγορά τροφοδοτικού?</a>
+		</pre>
+			
+			<p class="pp">
+			
+			<b id="1">Η δυσκολία στην αγορά τροφοδοτικού</b><br><br>
+			Οποιαδήποτε ηλεκτρική και ηλεκτρονική συσκευή έχει ανάγκη από τροφοδοσία. Από έναν πλήρη υπολογιστή μέχρι μία καφετιέρα ή μια τοστιέρα. Στον υπολογιστή, όμως, η αγορά τροφοδοτικού έχει εξαιρετικά μεγάλη σημασία.
+Ο βασικός λόγος είναι πως στις άλλες συσκευές, δεν επιλέγουμε εμείς το τροφοδοτικό. Ο σχεδιαστής της συσκευής, με βάση τις σπουδές και την εμπειρία του, έχει υπολογίσει με ακρίβεια τα ελάχιστα και μέγιστα watt που χρειάζονται.
+Όταν όμως συνθέτουμε εμείς ένα σταθερό υπολογιστή, έχουμε εμείς την ευθύνη για τη σωστή τροφοδοσία του. Κανείς δεν θα μας εμποδίσει να επιλέξουμε ένα πολύ μικρό ή, συχνότερα, πολύ μεγάλο τροφοδοτικό για τις ανάγκες μας.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-01.png"><br><br>
+Θεωρητικά, θα μπορούσαμε να ψάξουμε τις μέγιστες απαιτήσεις σε Watt για κάθε ξεχωριστό υποσύστημα. Ειδικά στις κάρτες γραφικών και τους επεξεργαστές, αυτές τις τιμές θα τις βρούμε ήδη από το κατάστημα.<br><br>		
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-02.png"><br><br>
+			Στη συνέχεια, θα ήταν αρκετό να αθροίσουμε αυτές τις μέγιστες τιμές. Έτσι θα γνωρίζαμε ποια θα ήταν η μέγιστη κατανάλωση του συστήματος, για να προχωρήσουμε στην κατάλληλη αγορά τροφοδοτικού.<br><br>
+
+Αυτή η διαδικασία, όμως, είναι αρκετά χρονοβόρα. Και για αρκετά υποσυστήματα μπορεί να μην βρούμε καθόλου τις σχετικές τιμές. Για αυτό το λόγο, είναι πολύ καλύτερα να χρησιμοποιήσουμε ένα PSU Calculator.<br><br>
+
+Πρόκειται για ειδικές ιστοσελίδες οι οποίες μας επιτρέπουν να εισάγουμε τα υποσυστήματα του υπολογιστή. Στη συνέχεια, θα παρουσιάσουν τα ελάχιστα και τα προτεινόμενα watt που πρέπει να έχει το τροφοδοτικό μας.<br><br>
+			
+			
+			<b id="2">Τι είναι το "συνιστώμενο τροφοδοτικό"</b><br><br>
+Εδώ αξίζει να σημειωθεί πως το "συνιστώμενο τροφοδοτικό" που αναγράφουν συχνά οι κάρτες γραφικών, πρακτικά έχει μικρή αξία σαν πληροφορία.<br><br>
+
+Ο κατασκευαστής έχει κάνει υποθέσεις για το ποια υποσυστήματα περιέχει ο υπολογιστής, για να κάνει πιο εύκολη την επιλογή τροφοδοτικού. Αυτό αναγράφεται ρητώς στις αναλυτικές προδιαγραφές της Nvidia.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-03.png"><br><br>
+Για παράδειγμα, αν ένας χρήστης θέλει να έχει 15 σκληρούς δίσκους στον υπολογιστή, θα χρειαστεί μεγαλύτερο τροφοδοτικό από 500W.<br><br>
+
+Αντίθετα, με έναν επεξεργαστή χαμηλής κατανάλωσης και έναν SSD, μπορεί ένα καλό 400w ή 450W τροφοδοτικό να αποδειχτεί πλήρως επαρκές.<br><br>
+
+			<b id="3">Πώς να αγοράσω τροφοδοτικό με το καλύτερο PSU Calculator</b><br><br>
+Κάνοντας μια αναζήτηση για PSU Calculator, θα βρούμε μια πληθώρα από σχετικές σελίδες. Ορισμένες είναι από κατασκευαστές (Coolermaster, MSI), άλλες από μεγάλα διεθνή e-shop (Newegg).<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-04.png"><br><br>
+Στον οδηγό θα εστιαστούμε σε ένα μόνο PSU Calculator, που είναι αποδεδειγμένα αξιόπιστο για όλες μας τις ενεργειακές ανάγκες.<br><br>
+
+			<b id="4">OuterVision Power Supply Calculator</b><br><br>
+Η OuterVision είναι μια ιστοσελίδα αφιερωμένη στο θέμα των τροφοδοτικών. Στις σελίδες της θα βρούμε αναλυτικές παρουσιάσεις για τα καλύτερα τροφοδοτικά της αγοράς, από τους ίδιους αλλά και από τρίτα site.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-05.png"><br><br>
+Όμως η μεγαλύτερη χρησιμότητα της σελίδας είναι το PSU Calculator που περιλαμβάνει. Πρόκειται για ένα από τα πιο πλήρη και αναλυτικά calculator στο ίντερνετ.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-06.png"><br><br>
+Μία απόδειξη για το πόσο αξιόπιστη είναι η συγκεκριμένη υπηρεσία είναι πως το αντίστοιχο PSU Calculator της πασίγνωστης CoolerMaster χρησιμοποιεί το δικό τους API και τη δική τους βάση δεδομένων. Κάτι θα ξέρουν.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-07.png"><br><br>
+
+			<b id="5">OuterVision Power Supply Calculator</b><br><br>
+Η χρήση του PSU Calculator είναι αρκετά απλή, εφόσον γνωρίζουμε τα υποσυστήματα του υπολογιστή.<br><br>
+
+Αν πρόκειται για την αγορά νέου υπολογιστή, έχουμε ήδη μια αναλυτική λίστα.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-08-e1491775221751.png"><br><br>
+
+Αν θέλουμε να αλλάξουμε τροφοδοτικό στον υπολογιστή που ήδη έχουμε, μπορούμε να δούμε αναλυτικά τα χαρακτηριστικά του με ειδικές εφαρμογές.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2016/01/Plirofories-Systimatos-Speccy-360x200.png"><br><br>
+
+Από εκεί και πέρα, αρκεί στις ενότητες του PSU Calculator να συμπληρώσουμε τις σχετικές τιμές.<br><br>
+
+			<b id="6">PSU Calculator Basic</b><br><br>
+Για τους περισσότερους χρήστες, το "Βασικό" PSU Calculator είναι υπέρ αρκετό. Το επιλέγουμε πατώντας στο Basic.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-09.png"><br><br>
+
+Επιλέγοντας έξι απλά στοιχεία, θα έχουμε μια πολύ καλή προσέγγιση για τις ανάγκες του υπολογιστή μας.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-10.png"><br><br>
+
+Όπως αναφέρει και η σελίδα, ο υπολογισμός περιλαμβάνει το πληκτρολόγιο, ποντίκι, και οκτώ ώρες ημερήσιας χρήσης.<br><br>
+
+Για τον επεξεργαστή, αρκεί να γράψουμε πχ i5 και θα μας δείξει μια αναλυτική λίστα με τα σχετικά μοντέλα.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-11.png"><br><br>
+
+Στις κάρτες γραφικών θα βρούμε λίστες με τα μοντέλα της Nvidia και της AMD. Υπάρχει επίσης επιλογή αν θέλουμε να κάνουμε SLI ή Crossfire με πολλαπλές κάρτες γραφικών.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-12.png"><br><br>
+
+Το μόνο χαρακτηριστικό που ίσως δεν είναι ξεκάθαρο είναι το FB Dimm στις μνήμες. Τα Full Buffer Dimm είναι ειδικές μνήμες που χρησιμοποιούνται σε server και δεν απασχολούν τους οικιακούς χρήστες.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-13.png"><br><br>
+Μέσα σε λίγα δευτερόλεπτα θα έχουμε συμπληρώσει τα υποσυστήματά μας. Με ένα κλικ στο Calculate θα έχουμε τα ελάχιστα Watt καθώς και το προτεινόμενο τροφοδοτικό.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-14.png"><br><br>
+Βλέπουμε λοιπόν πως για ένα σύστημα με i5 και GTX 1060, 301W είναι αρκετά για την τροφοδοσία. Πολύ λιγότερα από τα 500W που προτείνει υποθετικά η Nvidia. Το PSU Calculator προτείνει να πάρουμε 50w παραπάνω, για σιγουριά.<br><br>
+
+Για χρήστες που δεν σκοπεύουν να κάνουν overclock ή να χρησιμοποιούν τον υπολογιστή για 12+ ώρες τη μέρα, το βασικό PSU Calculator θα τους καλύψει πλήρως όσον αφορά την αγορά τροφοδοτικού.<br><br>
+
+			<b id="7">PSU Calculator Expert</b><br><br>
+Στην επιλογή Expert του PSU Calculator θα βρούμε σημαντικά περισσότερα πεδία προς συμπλήρωση.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-15.png"><br><br>
+Μπορούμε να συμπληρώσουμε την ακριβή συχνότητα του επεξεργαστή και της κάρτας γραφικών, τα voltage που έχουμε επιλέξει σε περίπτωση overclock, επιπλέον κάρτες επέκτασης, κλπ.<br><br>
+
+Θα βρούμε μέχρι και εξαιρετικά εξειδικευμένα υποσυστήματα, όπως συσκευές για Bitcoin Mining.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-16.png"><br><br>
+Σε κάθε περίπτωση, δεν χρειάζεται να συμπληρώσουμε πεδία με συσκευές που δεν έχουμε στο σύστημά μας. Ούτε και πειράζει ιδιαίτερα αν έχουμε πχ έναν 12άρη ανεμιστήρα και δεν τον δηλώσουμε.<br><br>
+
+Ένα χαρακτηριστικό που έχει μεγάλη σημασία στο expert PSU Calculator είναι η μέση ημερήσια χρήση.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-17.png"><br><br>
+Με την εντατική χρήση, παρουσιάζεται το φαινόμενο της γήρανσης των πυκνωτών στα τροφοδοτικά. Αυτό σημαίνει πως σταδιακά μπορούν να αποδώσουν λιγότερα Watt από την αρχική τους απόδοση.<br><br>
+
+Αν λοιπόν σκοπεύουμε να έχουμε ανοιχτό τον υπολογιστή 24/7 αντί για 8 ώρες τη μέρα, το PSU Calculator θα προτείνει ελαφρώς μεγαλύτερο τροφοδοτικό για τα ίδια ακριβώς υποσυστήματα.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-18.png"><br><br>
+
+			<b id="8">Τι να προσέξω στην αγορά τροφοδοτικού</b><br><br>
+
+Το να ξέρουμε το πόσα watt χρειαζόμαστε είναι χρήσιμο. Όμως υπάρχουν και άλλες παράμετροι όσον αφορά την αγορά τροφοδοτικού, που δεν τις αναφέρει το PSU Calculator.<br><br>
+
+			<b id="9">Μπορεί ένα τροφοδοτικό με πολλά watt να κάψει τον υπολογιστή?</b><br><br>
+			Δεν υπάρχει καμία απολύτως περίπτωση ένα τροφοδοτικό με περισσότερα Watt από όσα χρειάζεται ο υπολογιστής να προξενήσει οποιοδήποτε πρόβλημα. Το τροφοδοτικό δίνει στον υπολογιστή μόνο όση ενέργεια του ζητηθεί.<br><br>
+
+Αν ο υπολογιστής χρειάζεται 300 watt και το τροφοδοτικό που έχουμε είναι πχ 1500 watt, τότε ο υπολογιστής θα πάρει μόνο όσα watt χρειάζεται για να λειτουργήσει, ούτε μισό Watt παραπάνω.<br><br>
+
+Αντίθετα, ένα τροφοδοτικό με λιγότερα Watt απ' όσα χρειάζεται ο υπολογιστής, είναι πιθανό να κάψει υποσυστήματα. Μου έχει τύχει προσωπικά, ένα τροφοδοτικό 230 watt που είχε πάνω τρεις σκληρούς δίσκους, να τους καίει κατ' εξακολούθηση.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2015/01/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%A4%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-%CE%A4%CE%B9-%CE%BD%CE%B1-%CE%A0%CF%81%CE%BF%CF%83%CE%AD%CF%87%CE%BF%CF%85%CE%BC%CE%B5-%CE%9C%CF%8D%CE%B8%CE%BF%CE%B9-%CE%BA%CE%B1%CE%B9-%CE%91%CE%BB%CE%AE%CE%B8%CE%B5%CE%B9%CE%B5%CF%82-%CE%B3%CE%B9%CE%B1-%CF%84%CE%BF-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CF%8C-%CF%85%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE-30.png"><br><br>
+			Τότε, γιατί να μην πάρουμε όλοι 1000άρια τροφοδοτικά, και να καθόμαστε να παιδευόμαστε για να υπολογίσουμε τα σωστά Watt για την αγορά τροφοδοτικού?<br><br>
+
+Γιατί απλά είναι σπατάλη χρημάτων να έχουμε αγοράσει ένα τροφοδοτικό με πολύ περισσότερα Watt απ' όσα χρειαζόμαστε.<br><br>
+
+Αυτά τα χρήματα θα μπορούσαμε να τα επενδύσουμε καλύτερα σε άλλα κομμάτια του υπολογιστή - ή ακόμη και να τα φάμε σουβλάκια.<br><br>
+
+			<b id="10">Είναι όλα τα τροφοδοτικά των ίδιων watt ίδια?</b><br><br>
+			
+			Ας πούμε πως με βάση τις παραπάνω σελίδες υπολογισμού προκύπτει πως ο υπολογιστής που στήνουμε χρειάζεται ένα τροφοδοτικό 650 watt.<br><br>
+
+Όταν όμως πάμε να προχωρήσουμε στην αγορά τροφοδοτικού, διαπιστώνουμε πως μπορούμε να βρούμε τροφοδοτικά των 650 watt που κοστίζουν 30 ευρώ...<br><br>
+		<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-19.png"><br><br>
+...μέχρι τροφοδοτικά των 650 watt που κοστίζουν πάνω από 200 ευρώ.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-20.png"><br><br>
+Η διαφορά στην τιμή εξαρτάται από τρεις βασικούς παράγοντες:<br><br>
+
+Ποιότητα των πυκνωτών<br>
+Πιστοποίηση 80Plus<br>
+Modular ή semi-modular καλώδια<br><br>
+Όπως είναι λογικό, τα φτηνιάρικα τροφοδοτικά είναι η χειρότερη δυνατή επιλογή. Όταν βλέπουμε τροφοδοτικά από άγνωστες μάρκες, που είναι πολύ φθηνότερα από το αμέσως επόμενο επώνυμο μοντέλο, πρέπει να τα αποφεύγουμε πάση θυσία.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-21.png"><br><br>
+
+α τροφοδοτικά αυτά χρησιμοποιούν κακής ποιότητας πυκνωτές. Έχουν χαμηλή αποδοτικότητα, που σημαίνει πως παράγουν περισσότερη θερμότητα. Η επιπλέον θερμότητα μειώνει τη διάρκεια ζωής τους.<br><br>
+
+Όπως πιθανώς γνωρίζετε, αν καεί ένα τροφοδοτικό, σπάνια θα καεί μόνο του. Συνήθως θα πάρει μαζί του και κάτι από τον υπολογιστή, συχνά το σκληρό δίσκο, τη μητρική, ή και την κάρτα γραφικών.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2015/01/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%A4%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-%CE%A4%CE%B9-%CE%BD%CE%B1-%CE%A0%CF%81%CE%BF%CF%83%CE%AD%CF%87%CE%BF%CF%85%CE%BC%CE%B5-%CE%9C%CF%8D%CE%B8%CE%BF%CE%B9-%CE%BA%CE%B1%CE%B9-%CE%91%CE%BB%CE%AE%CE%B8%CE%B5%CE%B9%CE%B5%CF%82-%CE%B3%CE%B9%CE%B1-%CF%84%CE%BF-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CF%8C-%CF%85%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE-28.png"><br><br>
+
+			<b id="11">Ποιους κατασκευαστές να αποφεύγουμε</b><br><br>
+			
+Καλό είναι λοιπόν να αποφύγουμε τα φτηνιάρικα τροφοδοτικά από άγνωστες μάρκες. Ειδικά οι Deer, Force, Evolveo, Gembird, MS-Tech, είναι μάρκες που πρέπει να αποφεύγουμε με κάθε τρόπο.<br><br>
+
+Σοβαρά, ποιον κοροϊδεύει η MS-Tech που πουλάει τροφοδοτικό 920W με 75 ευρώ, όταν το επόμενο ακριβότερο κοστίζει 200 ευρώ?<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-22.png"><br><br>
+
+
+			<b id="12">Ποιους κατασκευαστές να προτιμήσουμε</b><br><br>
+
+Ένας σημαντικός διαχωρισμός στην αγορά τροφοδοτικού είναι ποιος είναι ο πραγματικός κατασκευαστής.<br><br>
+
+Πιθανώς να μην το γνωρίζετε, αλλά εταιρείες πασίγνωστες στο χώρο των τροφοδοτικών, όπως η Corsair, η Coolermaster, η Thermaltake, και άλλες, δεν κατασκευάζουν τα δικά τους τροφοδοτικά.<br><br>
+
+Αντίθετα, αναθέτουν σε άλλους κατασκευαστές να φτιάξουν το τροφοδοτικό, και απλά βάζουν τη μάρκα τους πάνω. Έτσι, για παράδειγμα, τα περισσότερα τροφοδοτικά της Corsair τα κατασκευάζει η Channel Well Technology (CWT).<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-23.png"><br><br>
+Τα μεγαλύτερα και ακριβότερα μοντέλα της εταιρείας τα κατασκευάζει η Flextronics.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-24.png"><br><br>
+Θα βρούμε όμως υψηλής ποιότητας Corsair τροφοδοτικά και από την Seasonic.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-25.png"><br><br>
+Αντίστοιχα, τα περισσότερα Coolermaster τροφοδοτικά τα κατασκευάζει η Enhance Electronics. Και εδώ όμως θα βρούμε υψηλής ποιότητας μοντέλα από τη Seasonic.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-27.png"><br><br>
+
+Μάρκες όπως οι CTW, Enhance Electronics, και Flextronics, δεν κυκλοφορούν στην Ελλάδα. Όμως Seasonic θα βρούμε στα μεγάλα e-shop.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-28.png"><br><br>
+Προκύπτει λοιπόν το εύλογο ερώτημα: γιατί να αγοράσουμε ένα τροφοδοτικό που να είναι Seasonic και να γράφει Corsair πάνω, και να μην πάρουμε απευθείας ένα τροφοδοτικό από τη Seasonic? Το ότι γράφει Corsair δεν το κάνει καλύτερο.<br><br>
+
+
+Για αυτό το λόγο, γενικά στο PCsteps όσον αφορά την αγορά τροφοδοτικού προτιμάμε να προτείνουμε κατασκευαστές, και όχι μεταπωλητές. Οι κατασκευαστές που συνιστούμε είναι οι Enermax, Seasonic, και Super Flower.<br><br>
+
+
+Ειδικά η Super Flower, ενώ το όνομα μάλλον δεν ακούγεται σοβαρό, έχει τη φήμη πως χρησιμοποιεί τους καλύτερους Ιαπωνικούς πυκνωτές της αγοράς. Επίσης παρέχει το μεγαλύτερο τροφοδοτικό στην Ελληνική αγορά.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-29.png"><br><br>
+Μάλιστα, το συγκεκριμένο τροφοδοτικό ήταν το πρώτο τροφοδοτικό 2000W για οικιακή χρήση διεθνώς.<br><br>
+
+Αν αμφιβάλλετε για την ποιότητα της Super Flower, αρκεί να αναλογιστείτε πως κατασκευάζει τα περισσότερα τροφοδοτικά της EVGA, και θα τη βρούμε και σε άλλες γνωστές εταιρείες.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-30.png"><br><br>
+Φυσικά, αν κάποια από τις Enermax, Seasonic, και Superflower δεν διαθέτει ένα τροφοδοτικό στα Watt και την τιμή που θέλουμε, δεν χάλασε ο κόσμος αν πάρουμε ένα Corsair, ένα Coolermaster, ή ένα EVGA.<br><br>
+
+Αν όμως υπάρχει πρόταση από κατασκευαστή στα μέτρα μας, μόνο κερδισμένοι θα βγούμε επιλέγοντάς την.<br><br>
+			<b id="13">Ένα τροφοδοτικό με περισσότερα watt έχει μεγαλύτερη κατανάλωση?</b><br><br>
+			
+Στις περισσότερες ηλεκτρικές συσκευές, από την ηλεκτρική σκούπα και το φούρνο μικροκυμάτων μέχρι το θερμοσίφωνο, τα Watt που αναγράφονται αφορούν την κατανάλωση.<br><br>
+
+Για παράδειγμα, αν έχουμε ένα ηλεκτρικό σκουπάκι των 500ων watt και το λειτουργούμε στο φουλ για δύο ώρες, θα έχει καταναλώσει μία κιλοβατώρα.<br><br>
+
+Στο τροφοδοτικό υπολογιστή, όμως, τα Watt που αναγράφονται δεν είναι η κατανάλωση. Είναι η μέγιστη ενέργεια που μπορεί να δώσει το τροφοδοτικό στον υπολογιστή.<br><br>
+
+Ουσιαστικά η κατανάλωση του υπολογιστή εξαρτάται από τα υποσυστήματά του, από την ενέργεια που χρειάζεται ο επεξεργαστής, η κάρτα γραφικών κλπ.<br><br>
+
+Μάλιστα, η κατανάλωση διαφέρει ανάλογα και με τις εργασίες που κάνουμε. Άλλη κατανάλωση έχει ο υπολογιστής όταν λειτουργεί απλά αχρησιμοποίητος, άλλη όταν σερφάρουμε στο Internet, και άλλη όταν παίζουμε ένα βαρύ παιχνίδι.<br><br>
+
+Ουσιαστικά, ο μόνος τρόπος να μειώσουμε την κατανάλωση του υπολογιστή είναι να βάλουμε μικρότερο επεξεργαστή και κάρτα γραφικών, που είναι τα υποσυστήματα με τη μεγαλύτερη κατανάλωση.<br><br>
+
+Αν μη τι άλλο, είναι δυνατόν ένα τροφοδοτικό των 1500ων Watt να έχει χαμηλότερη κατανάλωση από ένα τροφοδοτικό των 650 watt. Προφανώς σε εργασίες που μπορούν να καλύψουν και τα δύο τροφοδοτικά.<br><br>
+
+Αυτό έχει να κάνει με την αποδοτικότητα και το μυστηριώδες, για πολλούς, 80 plus.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2015/01/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%A4%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-%CE%A4%CE%B9-%CE%BD%CE%B1-%CE%A0%CF%81%CE%BF%CF%83%CE%AD%CF%87%CE%BF%CF%85%CE%BC%CE%B5-%CE%9C%CF%8D%CE%B8%CE%BF%CE%B9-%CE%BA%CE%B1%CE%B9-%CE%91%CE%BB%CE%AE%CE%B8%CE%B5%CE%B9%CE%B5%CF%82-%CE%B3%CE%B9%CE%B1-%CF%84%CE%BF-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CF%8C-%CF%85%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE-20.png"><br><br>
+
+			<b id="14">Τι είναι το 80 plus τροφοδοτικό</b><br><br>
+Σε έναν τέλειο κόσμο, ένα τέλειο τροφοδοτικό θα τραβούσε πχ 300 watt από την ηλεκτρική παροχή του σπιτιού και θα απέδιδε 300 watt στον υπολογιστή.<br><br>
+
+Στον πραγματικό κόσμο, όμως, ένα μέρος της ενέργειας μετατρέπεται σε θερμότητα και χάνεται στο περιβάλλον. Το ποσοστό της ενέργειας που διατηρείται είναι η αποδοτικότητα του τροφοδοτικού.<br><br>
+
+Ας πούμε πως έχουμε ένα υποθετικό τροφοδοτικό με αποδοτικότητα 50%. Για να δώσει 300 Watt στον υπολογιστή θα πρέπει να τραβήξει ενέργεια 600 watt από την ηλεκτρική παροχή του σπιτιού. Τα έξτρα 300 watt θα χαθούν ως θερμότητα.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2015/01/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%A4%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-%CE%A4%CE%B9-%CE%BD%CE%B1-%CE%A0%CF%81%CE%BF%CF%83%CE%AD%CF%87%CE%BF%CF%85%CE%BC%CE%B5-%CE%9C%CF%8D%CE%B8%CE%BF%CE%B9-%CE%BA%CE%B1%CE%B9-%CE%91%CE%BB%CE%AE%CE%B8%CE%B5%CE%B9%CE%B5%CF%82-%CE%B3%CE%B9%CE%B1-%CF%84%CE%BF-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CF%8C-%CF%85%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE-171.png"><br><br>
+
+Τα τροφοδοτικά 80 Plus έχουν πιστοποιηθεί πως έχουν αποδοτικότητα τουλάχιστον 80%. Δηλαδή, για να αποδώσουν 300 watt, θα χρειαστεί να τραβήξουν από την παροχή 375 watt.<br><br>
+
+Εδώ πρέπει να ξεκαθαρίσουμε πως κανένα - ποιοτικό - τροφοδοτικό δεν θα δώσει χαμηλότερα Watt από αυτά που αναγράφει.<br><br>
+
+Ένα τροφοδοτικό των 500ων Watt χωρίς πιστοποίηση και ένα τροφοδοτικό 500 watt με πιστοποίηση 80 plus θα μπορέσουν και τα δύο να δώσουν μέχρι 500 watt στον υπολογιστή.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2015/01/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%A4%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-%CE%A4%CE%B9-%CE%BD%CE%B1-%CE%A0%CF%81%CE%BF%CF%83%CE%AD%CF%87%CE%BF%CF%85%CE%BC%CE%B5-%CE%9C%CF%8D%CE%B8%CE%BF%CE%B9-%CE%BA%CE%B1%CE%B9-%CE%91%CE%BB%CE%AE%CE%B8%CE%B5%CE%B9%CE%B5%CF%82-%CE%B3%CE%B9%CE%B1-%CF%84%CE%BF-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CF%8C-%CF%85%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE-21.png"><br><br>
+Η μόνη διαφορά είναι πως το τροφοδοτικό χωρίς την πιστοποίηση θα έχει τραβήξει περισσότερο ρεύμα από την ηλεκτρική παροχή του σπιτιού για να δώσει την ίδια ενέργεια, και θα έχει μεγαλύτερες απώλειες σε θερμότητα.<br><br>
+
+Ουσιαστικά, δηλαδή, η μόνη διαφορά που θα δούμε ανάμεσα στην αγορά τροφοδοτικού χωρίς πιστοποίηση και στην αγορά τροφοδοτικού με πιστοποίηση είναι στη θερμοκρασία του υπολογιστή και τον λογαριασμό της ΔΕΗ.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2015/01/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%A4%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-%CE%A4%CE%B9-%CE%BD%CE%B1-%CE%A0%CF%81%CE%BF%CF%83%CE%AD%CF%87%CE%BF%CF%85%CE%BC%CE%B5-%CE%9C%CF%8D%CE%B8%CE%BF%CE%B9-%CE%BA%CE%B1%CE%B9-%CE%91%CE%BB%CE%AE%CE%B8%CE%B5%CE%B9%CE%B5%CF%82-%CE%B3%CE%B9%CE%B1-%CF%84%CE%BF-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CF%8C-%CF%85%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE-22.png"><br><br>
+Έτσι είναι δυνατόν ένα τροφοδοτικό των 1500ων Watt με πιστοποίηση 80plus να έχει στην πράξη χαμηλότερη κατανάλωση από ένα τροφοδοτικό των 650watt χωρίς πιστοποίηση, λόγω της διαφορετικής αποδοτικότητας.<br><br>
+
+Αν και τα δύο τροφοδοτικά έχουν την ίδια πιστοποίηση, στα ίδια watt θα έχουν θεωρητικά την ίδια κατανάλωση.<br><br>
+			<b id="15">Τι διαφορά έχει το 80 plus Bronze με το 80 plus Gold και τα άλλα επίπεδα?</b><br><br>
+
+Η λογική πίσω από την πιστοποίηση 80 plus είναι απλή. Όμως το γεγονός πως υπάρχουν πολλαπλές πιστοποιήσεις 80 plus δυσκολεύει τα πράγματα.<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2015/01/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%A4%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-%CE%A4%CE%B9-%CE%BD%CE%B1-%CE%A0%CF%81%CE%BF%CF%83%CE%AD%CF%87%CE%BF%CF%85%CE%BC%CE%B5-%CE%9C%CF%8D%CE%B8%CE%BF%CE%B9-%CE%BA%CE%B1%CE%B9-%CE%91%CE%BB%CE%AE%CE%B8%CE%B5%CE%B9%CE%B5%CF%82-%CE%B3%CE%B9%CE%B1-%CF%84%CE%BF-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CF%8C-%CF%85%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE-23.png"><br><br>
+Η διαφορά είναι πως μεγαλύτερες πιστοποιήσεις έχουν μεγαλύτερη αποδοτικότητα, η οποία μάλιστα εξαρτάται και από τον φόρτο του τροφοδοτικού.<br><br>
+Με βάση τον παρακάτω πίνακα, τον οποίο θα βρούμε σε αυτή τη σελίδα, στις μεγαλύτερες βαθμίδες η αποδοτικότητα μπορεί να ξεπεράσει το 90%<br><br>
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2017/04/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-2017-30a.png"><br><br>
+
+
+Ίσως τα πράγματα να ήταν λιγότερο μπερδεμένα αν πχ το 80 plus Gold ονομαζόταν απλά 90 plus. Όμως οι επίσημες πιστοποιήσεις είναι όλες 80 plus, με τα διάφορα μέταλλα Bronze, Silver, Gold, Titanium για τις βαθμίδες.<br><br>
+
+Τροφοδοτικά που ισχυρίζονται πως είναι πχ 85 plus δεν έχουν καμία επίσημη πιστοποίηση. Απλά ο κατασκευαστής ισχυρίζεται πως έχουν αποδοτικότητα 85% - που είναι πιθανό να μην ισχύει, εφόσον δεν έχει ελεγχθεί ανεξάρτητα.<br><br>
+
+<img border="0" alt="PC Build Img" src="https://cdn.pcsteps.gr/wp-content/uploads/2015/01/%CE%91%CE%B3%CE%BF%CF%81%CE%AC-%CE%A4%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CE%BF%CF%8D-%CE%A4%CE%B9-%CE%BD%CE%B1-%CE%A0%CF%81%CE%BF%CF%83%CE%AD%CF%87%CE%BF%CF%85%CE%BC%CE%B5-%CE%9C%CF%8D%CE%B8%CE%BF%CE%B9-%CE%BA%CE%B1%CE%B9-%CE%91%CE%BB%CE%AE%CE%B8%CE%B5%CE%B9%CE%B5%CF%82-%CE%B3%CE%B9%CE%B1-%CF%84%CE%BF-%CF%84%CF%81%CE%BF%CF%86%CE%BF%CE%B4%CE%BF%CF%84%CE%B9%CE%BA%CF%8C-%CF%85%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AE-25.png"><br><br>
+
+			</p>
+		</td>
+		<td> <button onclick="topFunction()" id="myBtn" title="Go to top" ><img src="../images/arrow.png" width=50px height=50px /></button> </td>
+	</tr>
+</table>
+</body>
+</html>
